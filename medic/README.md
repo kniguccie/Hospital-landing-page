@@ -1,70 +1,137 @@
-# Getting Started with Create React App
+# Medic — Hospital Landing Page 🚑
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Medic** is a simple, responsive hospital/clinic landing page built with React. It showcases services, doctors, facilities, partners, testimonials and other components commonly used for healthcare websites.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- Clean, responsive UI built with React
+- Modular components: `Navbar`, `Banner`, `Services`, `Doctors`, `Facilities`, `Testimonials`, `Partners`, `Footer`
+- Local assets and data in `src/assets` for easy customization
+- Ready-to-build production bundle via `react-scripts` (Create React App)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧰 Tech stack
 
-### `npm test`
+- React (v19) with Create React App
+- JavaScript (ES6+)
+- CSS modules / component-level styles
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (LTS recommended) and npm installed
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Verify with:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+node -v
+npm -v
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 💻 Quick Start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repo and change into the `medic` folder (or open the workspace in your editor):
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone <repo-url>
+cd Hospital-landing-page/medic
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Run the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+This launches the app at http://localhost:3000 by default.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📦 Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+These scripts come from `package.json`:
 
-### Making a Progressive Web App
+- `npm start` — Runs the app in development mode
+- `npm run build` — Builds the app for production to the `build` folder
+- `npm test` — Launches the test runner
+- `npm run eject` — Ejects Create React App configuration (irreversible)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+medic/
+├─ public/
+│  └─ index.html
+├─ src/
+│  ├─ assets/ (images, services, doctors data)
+│  ├─ components/ (Banner, Navbar, Services, Doctors, Facilities, Testimonials, Partners, Footer)
+│  ├─ App.js
+│  └─ index.js
+├─ package.json
+└─ README.md
+```
 
-### Deployment
+Key component files:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- `src/components/banner/Banner.jsx`
+- `src/components/services/Services.jsx`
+- `src/components/doctors/Doctors.jsx`
+- `src/components/facilities/Facilities.jsx`
+- `src/components/testimonials/Testimonials.jsx`
+- `src/components/partners/Partners.jsx`
+- `src/components/footer/Footer.jsx`
+- `src/components/navbar/Navbar.jsx`
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🔧 Customization Tips
+
+- Replace images in `src/assets/images` and update references in asset files.
+- Update `src/assets/services.js` and `src/assets/doctors.js` to change displayed content.
+- Edit component CSS files (e.g., `src/components/*/*.css`) for styling changes.
+
+---
+
+## 🚀 Deployment
+
+You can deploy the `build` folder produced by `npm run build` to many static hosts:
+
+- Netlify — drag & drop the `build/` folder or connect via Git
+- Vercel — seamless Create React App deployments
+- GitHub Pages — use `gh-pages` package or deploy `build/` assets via GitHub Actions
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome. Please open issues for bugs or feature suggestions and submit pull requests for improvements.
+
+---
+
+## 📄 License
+
+This project is provided under the **MIT License**. Feel free to adapt and use it for personal or commercial projects.
+
+---
+
+## ✉️ Contact
+
+For questions or help with the project, open an issue or contact the repository owner.
+
+---
+
+_Updated README for the Medic hospital landing page._
